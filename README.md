@@ -70,6 +70,55 @@ python src/simulation/network_simulator.py
 ```
 
 ---
+##  Network Visualization
+
+The computed primary and backup paths are shown below:
+
+![Network Visualization](docs/network_diagram.png)
+
+---
+##  Input Format
+
+The network topology is defined in `data/input.txt`:
+
+Example:
+
+```
+A B 4
+B D 3
+A C 2
+C E 5
+E F 1
+D F 2
+```
+
+Each line represents:
+Node1 Node2 Weight
+---
+
+##  Example Output
+
+Primary Path:
+A → B → D → F
+
+Backup Path:
+A → C → E → F
+
+After link failure (B → D):
+System automatically switches to backup path.
+
+---
+##  Complexity
+
+* Dijkstra’s Algorithm: O(E log V)
+* Suurballe’s Algorithm: O(E log V)
+
+Efficient for medium to large network graphs.
+---
+##  Failure Simulation
+
+The system simulates link failure and automatically switches to backup path without recomputation.
+---
 
 ##  Tech Stack
 
