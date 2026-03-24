@@ -17,6 +17,10 @@ using Suurballe’s algorithm.
 
 ---
 
+##  Why This Matters
+
+In real-world networks, failures are inevitable. This project demonstrates how algorithmic approaches can ensure reliability and minimize downtime in critical infrastructure systems.
+
 ##  Key Concepts
 
 * Optical Network Routing
